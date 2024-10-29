@@ -5,6 +5,7 @@
   home.homeDirectory = "/home/brook";
   home.packages = with pkgs; [
     fastfetch
+    hyfetch
     nerdfetch
     cmatrix
     cowsay
@@ -18,11 +19,21 @@
     # Utilities
     eza
     fzf
-    neovim
+    gitui
+    lazygit
     ripgrep
     starship
     zellij
     zoxide
+
+    # Text Editors
+    emacs
+    neovim
+
+    # GUI Applications
+    kitty
+    libreoffice
+    vesktop
   ];
 
   programs.bash = {
@@ -30,7 +41,7 @@
     enableCompletion = true;
     shellAliases = {
       c = "clear";
-      q = "quit";
+      q = "exit";
       zj = "zellij";
       ls = "eza -F --group-directories-first";
       ll = "ls --long --icons";
