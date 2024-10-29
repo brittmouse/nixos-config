@@ -19,10 +19,13 @@
     # Utilities
     eza
     fzf
+    gcc
     gitui
+    gnumake
     lazygit
     ripgrep
     starship
+    xclip
     zellij
     zoxide
 
