@@ -46,8 +46,12 @@
   services.xserver.enable = true;
 
   # Enable the XFCE Desktop Environment.
+  # services.xserver.displayManager.lightdm.enable = true;
+  # services.xserver.desktopManager.xfce.enable = true;
+
+  # Enable the Cinnamon Deesktop Environment
   services.xserver.displayManager.lightdm.enable = true;
-  services.xserver.desktopManager.xfce.enable = true;
+  services.xserver.desktopManager.cinnamon.enable = true;
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -126,6 +130,10 @@
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
+  
+  # Enable LTP
+  services.tlp.enable = true;
+  powerManagement.powertop.enable = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
