@@ -53,6 +53,9 @@
       lt = "ls --tree";
       lta = "la --tree";
     };
+    initExtra = ''
+      export PATH="$PATH:$HOME/.config/emacs/bin"
+      '';
   };
 
   programs.starship = {
