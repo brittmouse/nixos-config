@@ -114,8 +114,10 @@
 
   # Fonts
   fonts.packages = with pkgs; [
+    comfortaa
     nerdfonts
     noto-fonts
+    quicksand
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
