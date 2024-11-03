@@ -33,6 +33,10 @@
     emacs
     neovim
 
+    # Dictionaries for Emacs
+    enchant
+    hunspell
+
     # GUI Applications
     kitty
     libreoffice
